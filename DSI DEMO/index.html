@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Componentes UI - Demo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="demo-header">
+        <div class="container">
+            <h1><i class="fas fa-palette"></i> Biblioteca de Componentes UI</h1>
+            <p>Colección de componentes reutilizables con CSS avanzado</p>
+            <nav class="demo-nav">
+                <a href="#botones" class="nav-link">Botones</a>
+                <a href="#tarjetas" class="nav-link">Tarjetas</a>
+                <a href="#formularios" class="nav-link">Formularios</a>
+                <a href="#navegacion" class="nav-link">Navegación</a>
+                <a href="#modales" class="nav-link">Modales</a>
+                <a href="#alertas" class="nav-link">Alertas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="demo-main container">
+        <!-- Sección de Botones -->
+        <section id="botones" class="demo-section">
+            <h2><i class="fas fa-mouse-pointer"></i> Botones</h2>
+            <div class="component-grid">
+                <div class="component-example">
+                    <h3>Botones Primarios</h3>
+                    <button class="btn btn--primary">Botón Primario</button>
+                    <button class="btn btn--primary btn--hover">Hover State</button>
+                    <button class="btn btn--primary" disabled>Deshabilitado</button>
+                </div>
+                <!-- Más ejemplos de botones -->
+            </div>
+        </section>
+
+        <!-- Sección de Tarjetas -->
+        <section id="tarjetas" class="demo-section">
+            <h2><i class="fas fa-id-card"></i> Tarjetas</h2>
+            <div class="component-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <img src="https://picsum.photos/400/200" alt="Imagen de ejemplo" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Tarjeta Básica</h3>
+                        <p class="card__text">Esta es una tarjeta de ejemplo con contenido.</p>
+                    </div>
+                    <div class="card__footer">
+                        <button class="btn btn--primary">Acción</button>
+                    </div>
+                </div>
+                <!-- Más tipos de tarjetas -->
+            </div>
+        </section>
+
+        <!-- Sección de Formularios -->
+        <section id="formularios" class="demo-section">
+            <h2><i class="fas fa-edit"></i> Formularios</h2>
+            <form class="demo-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                </div>
+                <!-- Más elementos de formulario -->
+            </form>
+        </section>
+
+        <!-- Sección de Navegación Responsiva -->
+        <section id="navegacion" class="demo-section">
+            <h2><i class="fas fa-bars"></i> Navegación Responsiva</h2>
+            <nav class="navbar">
+                <div class="navbar__brand">MiSitio</div>
+                <button class="navbar__toggler" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="navbar__menu">
+                    <li><a href="#" class="navbar__link active">Inicio</a></li>
+                    <li><a href="#" class="navbar__link">Acerca</a></li>
+                    <!-- Más enlaces -->
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Más secciones para otros componentes -->
+    </main>
+
+    <footer class="demo-footer">
+        <div class="container">
+            <p>© 2025 - Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
+            <p>Actividad #5: Biblioteca de Componentes UI</p>
+        </div>
+    </footer>
+
+    <!-- Scripts para demo interactiva -->
+    <script src="demo.js"></script>
+</body>
+</html>
